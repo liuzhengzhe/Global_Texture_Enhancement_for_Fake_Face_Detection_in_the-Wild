@@ -5,7 +5,7 @@ Code for the paper [Global Texture Enhancement for Fake Face Detection in the Wi
 
 **Authors**: Zhengzhe Liu, Xiaojuan Qi, Philip H.S. Torr
 
-<img src="face.PNG" width="900"/>
+<img src="face.PNG" width="400"/>
 
 ## Data Preparation
 
@@ -15,7 +15,7 @@ Optionally, to evaluate the low-resolution GANs, download images from CelebA dat
 
 ## Inference and Evaluation
 
-We release one of the [five models](https://drive.google.com/) for StyleGAN-FFHQ, StyleGAN-CelebA and PGGAN-CelebA, respectively. 
+We release [the model](https://drive.google.com/) for StyleGAN-FFHQ, StyleGAN-CelebA and PGGAN-CelebA, respectively. 
 
 Modify "root" folder and image path in test.py, and then test the images on all the datasets. 
 
