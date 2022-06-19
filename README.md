@@ -1,0 +1,2 @@
+# Global_Texture_Enhancement_for_Fake_Face_Detection_in_the-Wild
+CVPR 2020
