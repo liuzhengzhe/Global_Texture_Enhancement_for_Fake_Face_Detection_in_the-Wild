@@ -10,7 +10,7 @@ Code for the paper [Global Texture Enhancement for Fake Face Detection in the Wi
 
 ## Demo
 
-Download [the model and the demo data](https://drive.google.com/drive/folders/10fSAR8lh94FDGNoMMo5cfDCKQqkZ2Nsm?usp=sharing) for StyleGAN-FFHQ, StyleGAN-CelebA and PGGAN-CelebA, respectively. In each folder, 
+Download [the model and the demo data](https://drive.google.com/) for StyleGAN-FFHQ, StyleGAN-CelebA and PGGAN-CelebA, respectively. In each folder, 
 
 ```
 python demo.py
