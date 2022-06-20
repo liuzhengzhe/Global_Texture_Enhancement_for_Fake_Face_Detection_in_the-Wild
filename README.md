@@ -7,21 +7,23 @@ Code for the paper [Global Texture Enhancement for Fake Face Detection in the Wi
 
 <img src="face.PNG" width="400"/>
 
+
+## Demo
+
+Download [the model and the demo data](https://drive.google.com/) for StyleGAN-FFHQ, StyleGAN-CelebA and PGGAN-CelebA, respectively. In each folder, 
+
+```
+python demo.py
+```
+
+It will print the file name, processing (resize 8x, JPEG or original image) and prediction (0 for fake and 1 for real). 
+
 ## Data Preparation
 
 Download the 10k images from FFHQ, CelebA, and generate 10k images using StyleGAN, PGGAN on the datasets. Please save the 1024*1024 resolution images with PNG format, not JPG. 
 
 Optionally, to evaluate the low-resolution GANs, download images from CelebA dataset, and generate images using DCGAN, DRAGAN and StarGAN. 
 
-## Inference and Evaluation
-
-We release [the model](https://drive.google.com/) for StyleGAN-FFHQ, StyleGAN-CelebA and PGGAN-CelebA, respectively. 
-
-Modify "root" folder and image path in test.py, and then test the images on all the datasets. 
-
-```
-python test.py
-```
 
 ## Training
 
@@ -35,6 +37,17 @@ Put graminit.pth to the training folder as initialization, and start training, w
 
 ```
 python main.py
+```
+
+## Evaluation
+
+
+Modify "root" folder and image path in test.py, and then test the images on all the datasets. 
+
+```
+python test.py
+python test2.py
+python test3.py
 ```
 
 ## Contact

@@ -16,7 +16,13 @@ from torchvision.transforms import transforms
 
 gt=0
 model=torch.load('pggan-celeba.pth')
+model.eval()
 
+corr=0.0
+wrong=0.0
+
+corrs = np.zeros((2,1))
+wrongs = np.zeros((2,1))
 
 fw=open('result.txt','a')
 
@@ -28,11 +34,9 @@ wrong=0.0
 corrs = np.zeros((2,1))
 wrongs = np.zeros((2,1))
 
-
-root='./'
 cnt=0
 gt=0
-paths=glob.glob(root+'pngdata/dcgan/*')
+paths=glob.glob('/media/lzz/LENOVO_USB_HDD/pngdata/dcgan/*')
 paths.sort()
 for path in paths:
      name=path.split('/')[-1].split('.')[0]
@@ -73,7 +77,7 @@ wrongs = np.zeros((2,1))
 
 cnt=0
 gt=0
-paths=glob.glob(root+'pngdata/dragan/*')
+paths=glob.glob('/media/lzz/LENOVO_USB_HDD/pngdata/dragan/*')
 paths.sort()
 for path in paths:
      name=path.split('/')[-1].split('.')[0]
@@ -110,7 +114,7 @@ fw.flush()
 
 cnt=0
 gt=0
-paths=glob.glob(root+'pngdata/stargan/*')
+paths=glob.glob('/media/lzz/LENOVO_USB_HDD/pngdata/stargan/*')
 paths.sort()
 for path in paths:
      name=path.split('/')[-1].split('.')[0]
@@ -154,7 +158,7 @@ wrongs = np.zeros((2,1))
 
 gt=1
 cnt=0
-paths=glob.glob(root+'pngdata/fang/*')
+paths=glob.glob('/media/lzz/LENOVO_USB_HDD/pngdata/fang/*')
 paths.sort()
 for path in paths:
      name=path.split('/')[-1].split('.')[0]
@@ -201,7 +205,7 @@ list=[]
 for line in f:
  list.append(line.split(' ')[0])
 gt=1
-paths=glob.glob(root+'pngdata/data/celeba-1024/*')
+paths=glob.glob('/media/lzz/LENOVO_USB_HDD/pngdata/data/celeba-1024/*')
 paths.sort()
 for path in paths:
      name=path.split('/')[-1].split('.')[0]
@@ -262,7 +266,7 @@ list=[]
 for line in f:
  list.append(line.split(' ')[0])
 gt=0
-paths=glob.glob(root+'pngdata/data/prog-gan-cele/*')
+paths=glob.glob('/media/lzz/LENOVO_USB_HDD/pngdata/data/prog-gan-cele/*')
 paths.sort()
 for path in paths:
      name=path.split('/')[-1].split('.')[0]
@@ -325,7 +329,7 @@ wrongs = np.zeros((2,1))
 cnt=0
 
 gt=0
-paths=glob.glob(root+'pngdata/data/style-cele/*')
+paths=glob.glob('/media/lzz/LENOVO_USB_HDD/pngdata/data/style-cele/*')
 paths.sort()
 for path in paths:
      name=path.split('/')[-1].split('.')[0]
@@ -378,7 +382,7 @@ corrs = np.zeros((2,1))
 wrongs = np.zeros((2,1))
 cnt=0
 gt=1
-paths=glob.glob(root+'pngdata/data/ffhq/*')
+paths=glob.glob('/media/lzz/LENOVO_USB_HDD/pngdata/data/ffhq/*')
 paths.sort()
 for path in paths:
      name=path.split('/')[-1].split('.')[0]
@@ -438,7 +442,7 @@ corrs = np.zeros((2,1))
 wrongs = np.zeros((2,1))
 
 gt=0
-paths=glob.glob(root+'pngdata/data/style-ffhq/*')
+paths=glob.glob('/media/lzz/LENOVO_USB_HDD/pngdata/data/style-ffhq/*')
 paths.sort()
 for path in paths:
      name=path.split('/')[-1].split('.')[0]

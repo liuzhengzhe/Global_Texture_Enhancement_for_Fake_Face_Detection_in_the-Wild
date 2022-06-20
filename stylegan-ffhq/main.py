@@ -328,16 +328,15 @@ for epoch in range(epochs):
         optimizer.step()
         running_loss += loss.item()
 
-        r0=test0(model)
+
         r1=test1(model)
-        r2=test2(model)
-        r3=test3(model)
         r4=test4(model)
         r5=test5(model)
         r6=test6(model)
         r7=test7(model)
-        #r8=test8(model)
-        score=r0+r1+r2+r3*2+r4+r5+r6+r7
+        
+        score=r1+r4+r5+r6+r7
+        print (r1+r4+r5+r6+r7,maxi)
         if score>maxi:
            maxi=score
    

@@ -363,7 +363,7 @@ class ResNet(nn.Module):
         exit()'''
 
         x=torch.cat((x,gi,g0,g1,g2,g3,g4),1)
-        #x = self.fcnewr(x)
+        x = self.fcnewr(x)
         return x
 
 
